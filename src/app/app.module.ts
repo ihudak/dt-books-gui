@@ -24,6 +24,13 @@ import { OrderListComponent } from './order-list/order-list.component';
 import { OrderDetailsComponent } from './order-details/order-details.component';
 import { CreateOrderComponent } from './create-order/create-order.component';
 import { UpdateOrderComponent } from './update-order/update-order.component';
+import { RatingListComponent } from './rating-list/rating-list.component';
+import { RatingDetailsComponent } from './rating-details/rating-details.component';
+import { CreateRatingComponent } from './create-rating/create-rating.component';
+import { UpdateRatingComponent } from './update-rating/update-rating.component';
+import { CartDetailsComponent } from './cart-details/cart-details.component';
+import { StorageDetailsComponent } from './storage-details/storage-details.component';
+import { UpdateStorageComponent } from './update-storage/update-storage.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +53,14 @@ import { UpdateOrderComponent } from './update-order/update-order.component';
     OrderListComponent,
     OrderDetailsComponent,
     CreateOrderComponent,
-    UpdateOrderComponent
+    UpdateOrderComponent,
+    RatingListComponent,
+    RatingDetailsComponent,
+    CreateRatingComponent,
+    UpdateRatingComponent,
+    CartDetailsComponent,
+    StorageDetailsComponent,
+    UpdateStorageComponent
   ],
   imports: [
     BrowserModule,

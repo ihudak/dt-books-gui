@@ -23,6 +23,10 @@ export class StorageListComponent {
     });
   }
 
+  updateStorage(id: number) {
+    this.router.navigate(['update-storage', id]);
+  }
+
   ingestToStorage(isbn: string) {
     this.router.navigate(['ingest-storage', isbn]);
   }

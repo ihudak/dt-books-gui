@@ -36,7 +36,7 @@ export class StorageService {
   }
 
   updateStorage(storage: Storage): Observable<Object> {
-    return this.httpClient.put(`${this.baseURL}`, storage);
+    return this.httpClient.put(`${this.baseURL}/${storage.id}`, storage);
   }
 
   deleteStorage(id: number): Observable<Object> {

@@ -19,6 +19,13 @@ import {OrderListComponent} from "./order-list/order-list.component";
 import {CreateOrderComponent} from "./create-order/create-order.component";
 import {UpdateOrderComponent} from "./update-order/update-order.component";
 import {OrderDetailsComponent} from "./order-details/order-details.component";
+import {RatingListComponent} from "./rating-list/rating-list.component";
+import {RatingDetailsComponent} from "./rating-details/rating-details.component";
+import {CreateRatingComponent} from "./create-rating/create-rating.component";
+import {UpdateRatingComponent} from "./update-rating/update-rating.component";
+import {CartDetailsComponent} from "./cart-details/cart-details.component";
+import {StorageDetailsComponent} from "./storage-details/storage-details.component";
+import {UpdateStorageComponent} from "./update-storage/update-storage.component";
 
 const routes: Routes = [
   { path: 'clients', component: ClientListComponent },
@@ -32,14 +39,21 @@ const routes: Routes = [
   { path: 'carts', component: CartListComponent },
   { path: 'create-cart', component: CreateCartComponent },
   { path: 'update-cart/:id', component: UpdateCartComponent },
+  { path: 'cart-details/:id', component: CartDetailsComponent },
   { path: 'storage', component: StorageListComponent },
   { path: 'create-storage', component: CreateStorageComponent },
+  { path: 'update-storage/:id', component: UpdateStorageComponent },
   { path: 'ingest-storage/:isbn', component: IngestStorageComponent },
+  { path: 'storage-details/:id', component: StorageDetailsComponent },
   { path: 'sell-storage/:isbn', component: SellStorageComponent },
   { path: 'orders', component: OrderListComponent },
   { path: 'create-order', component: CreateOrderComponent },
   { path: 'update-order/:id', component: UpdateOrderComponent },
   { path: 'order-details/:id', component: OrderDetailsComponent },
+  { path: 'ratings', component: RatingListComponent },
+  { path: 'create-rating', component: CreateRatingComponent },
+  { path: 'update-rating/:id', component: UpdateRatingComponent },
+  { path: 'rating-details/:id', component: RatingDetailsComponent },
   { path: '', redirectTo: 'clients', pathMatch: 'full' }
 ];
 
