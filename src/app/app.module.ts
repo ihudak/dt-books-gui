@@ -20,6 +20,10 @@ import { StorageListComponent } from './storage-list/storage-list.component';
 import { IngestStorageComponent } from './ingest-storage/ingest-storage.component';
 import { SellStorageComponent } from './sell-storage/sell-storage.component';
 import { CreateStorageComponent } from './create-storage/create-storage.component';
+import { OrderListComponent } from './order-list/order-list.component';
+import { OrderDetailsComponent } from './order-details/order-details.component';
+import { CreateOrderComponent } from './create-order/create-order.component';
+import { UpdateOrderComponent } from './update-order/update-order.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +42,11 @@ import { CreateStorageComponent } from './create-storage/create-storage.componen
     StorageListComponent,
     IngestStorageComponent,
     SellStorageComponent,
-    CreateStorageComponent
+    CreateStorageComponent,
+    OrderListComponent,
+    OrderDetailsComponent,
+    CreateOrderComponent,
+    UpdateOrderComponent
   ],
   imports: [
     BrowserModule,

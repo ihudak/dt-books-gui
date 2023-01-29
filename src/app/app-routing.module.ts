@@ -15,6 +15,10 @@ import {StorageListComponent} from "./storage-list/storage-list.component";
 import {IngestStorageComponent} from "./ingest-storage/ingest-storage.component";
 import {SellStorageComponent} from "./sell-storage/sell-storage.component";
 import {CreateStorageComponent} from "./create-storage/create-storage.component";
+import {OrderListComponent} from "./order-list/order-list.component";
+import {CreateOrderComponent} from "./create-order/create-order.component";
+import {UpdateOrderComponent} from "./update-order/update-order.component";
+import {OrderDetailsComponent} from "./order-details/order-details.component";
 
 const routes: Routes = [
   { path: 'clients', component: ClientListComponent },
@@ -32,6 +36,10 @@ const routes: Routes = [
   { path: 'create-storage', component: CreateStorageComponent },
   { path: 'ingest-storage/:isbn', component: IngestStorageComponent },
   { path: 'sell-storage/:isbn', component: SellStorageComponent },
+  { path: 'orders', component: OrderListComponent },
+  { path: 'create-order', component: CreateOrderComponent },
+  { path: 'update-order/:id', component: UpdateOrderComponent },
+  { path: 'order-details/:id', component: OrderDetailsComponent },
   { path: '', redirectTo: 'clients', pathMatch: 'full' }
 ];
 
