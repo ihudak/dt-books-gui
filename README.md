@@ -25,3 +25,10 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+### BUILD
+docker image build --platform linux/amd64 -t ihudak/dt-bookstore-webapp:latest .
+docker push ihudak/dt-bookstore-webapp:latest
+
+docker image build --platform linux/arm64 -t ihudak/dt-bookstore-webapp:arm64 .
+docker push ihudak/dt-bookstore-webapp:arm64
