@@ -7,7 +7,7 @@ import {Order} from "./order";
   providedIn: 'root'
 })
 export class OrderService {
-  private baseURL="http://localhost:8085/api/v1/orders";
+  private baseURL="http://localhost:85/api/v1/orders";
   constructor(private httpClient: HttpClient) { }
 
   getOrdersList(): Observable<Order[]> {

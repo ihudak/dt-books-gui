@@ -8,7 +8,7 @@ import {Rating} from "./rating";
 })
 export class RatingService {
 
-  private baseURL="http://localhost:8088/api/v1/ratings";
+  private baseURL="http://localhost:88/api/v1/ratings";
 
   constructor(private httpClient: HttpClient) { }
 

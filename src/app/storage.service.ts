@@ -7,7 +7,7 @@ import {Storage} from "./storage";
   providedIn: 'root'
 })
 export class StorageService {
-  private baseURL="http://localhost:8084/api/v1/storage";
+  private baseURL="http://localhost:84/api/v1/storage";
 
   constructor(private httpClient: HttpClient) { }
 

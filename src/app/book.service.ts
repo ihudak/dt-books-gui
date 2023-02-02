@@ -7,7 +7,7 @@ import {Book} from "./book";
   providedIn: 'root'
 })
 export class BookService {
-  private baseURL="http://localhost:8082/api/v1/books";
+  private baseURL="http://localhost:82/api/v1/books";
   constructor(private httpClient: HttpClient) { }
   getBooksList(): Observable<Book[]> {
     return this.httpClient.get<Book[]>(`${this.baseURL}`);
