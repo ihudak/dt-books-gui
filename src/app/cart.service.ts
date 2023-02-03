@@ -7,7 +7,7 @@ import {Cart} from "./cart";
   providedIn: 'root'
 })
 export class CartService {
-  private baseURL="http://localhost:83/api/v1/carts";
+  private baseURL="http://20.253.122.38/api/v1/carts";
 
   constructor(private httpClient: HttpClient) { }
 

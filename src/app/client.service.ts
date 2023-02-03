@@ -7,7 +7,7 @@ import {Client} from "./client";
   providedIn: 'root'
 })
 export class ClientService {
-  private baseURL="http://localhost:81/api/v1/clients";
+  private baseURL="http://20.241.255.156/api/v1/clients";
   constructor(private httpClient: HttpClient) { }
   getClientsList(): Observable<Client[]> {
     return this.httpClient.get<Client[]>(`${this.baseURL}`);
