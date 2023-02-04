@@ -2,12 +2,13 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {Order} from "./order";
+import {environment} from "../environments/environment";
 
 @Injectable({
   providedIn: 'root'
 })
 export class OrderService {
-  private baseURL="http://20.253.122.152/api/v1/orders";
+  private baseURL=environment.ordersUrl;
   constructor(private httpClient: HttpClient) { }
 
   getOrdersList(): Observable<Order[]> {

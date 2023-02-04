@@ -1,13 +1,14 @@
-import { Injectable } from '@angular/core';
+import {Inject, Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {Storage} from "./storage";
+import { environment } from '../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class StorageService {
-  private baseURL="http://20.253.121.108/api/v1/storage";
+  private baseURL=environment.storageUrl;
 
   constructor(private httpClient: HttpClient) { }
 
