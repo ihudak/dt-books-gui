@@ -86,7 +86,7 @@
               "browserTarget": "bookstore:build:development"
             },
             "staging": {
-              "browserTarget": "bookstore:build:development"
+              "browserTarget": "bookstore:build:staging"
             }
           },
           "defaultConfiguration": "production"

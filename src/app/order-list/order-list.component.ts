@@ -48,7 +48,7 @@ export class OrderListComponent {
       console.log(data);
       this.getOrders();
     },
-      error => { console.log(error); alert(error.error.message); }
+      error => { console.log(error); alert(error.error.message || error.message || error.error.error); }
     );
   }
 
