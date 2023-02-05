@@ -5,5 +5,7 @@ export const environment = {
   cartsUrl: 'http://localhost:8083/api/v1/carts',
   storageUrl: 'http://localhost:8084/api/v1/storage',
   ordersUrl: 'http://localhost:8085/api/v1/orders',
-  ratingsUrl: 'http://localhost:8088/api/v1/ratings'
+  ratingsUrl: 'http://localhost:8088/api/v1/ratings',
+  verGUI: '1.0.0',
+  dateGUI: 'Feb-05-2023'
 };

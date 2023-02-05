@@ -5,5 +5,7 @@ export const environment = {
   cartsUrl: 'http://20.253.122.38/api/v1/carts',
   storageUrl: 'http://20.253.121.108/api/v1/storage',
   ordersUrl: 'http://20.253.122.152/api/v1/orders',
-  ratingsUrl: 'http://ratings-svc/api/v1/ratings'
+  ratingsUrl: 'http://20.121.108.205/api/v1/ratings',
+  verGUI: '1.0.0',
+  dateGUI: 'Feb-05-2023'
 };
