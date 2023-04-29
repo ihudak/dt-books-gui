@@ -1,4 +1,3 @@
-#!/bin/bash
 ng build
 docker image build --platform linux/amd64 -t ivangudak096/bookstore-webapp-x64:latest .
 docker push ivangudak096/bookstore-webapp-x64:latest
