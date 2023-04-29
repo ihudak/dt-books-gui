@@ -27,4 +27,4 @@ COPY . .
 EXPOSE 4200
 
 # specify default command to run when we run the image
-CMD /usr/src/app/node_modules/.bin/ng serve --host 0.0.0.0 --disable-host-check -c staging
+CMD /usr/src/app/node_modules/.bin/ng serve --host 0.0.0.0 --disable-host-check -c production
